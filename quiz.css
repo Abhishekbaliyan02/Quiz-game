@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(111, 215, 231);
+    margin-left: 500px;
+    margin-top: 124px;
+}
+
+
+/* Entry page start */
+
+section {
+    width: 500px;
+    height: 500px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px 0px;
+    background-color: white;
+}
+
+section img {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+
+}
+
+section h1 {
+    color: rgb(56, 126, 224);
+    padding: 20px;
+}
+
+section>p {
+    font-weight: bold;
+    font-size: 0.9rem;
+    padding-bottom: 10px;
+}
+
+form input[type=text] {
+    width: 442px;
+    height: 29px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+
+}
+
+form p {
+    font-size: 0.8rem;
+    color: grey;
+    padding-top: 5px;
+}
+
+/* .opt{
+    width: 200px;
+    height: 40px;
+    background-color: rgb(156, 200, 238);
+    margin-left: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 0.9rem;
+} */
+/* .btns{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+} */
+/* .btn:hover{
+    color: rgb(156, 200, 238);
+    background-color: white;
+    font-size: 1.1rem;
+} */
+form input[type=button] {
+    width: 100px;
+    height: 29px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 20px;
+    background-color: rgb(37, 129, 220);
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+}
+
+form input[type=button]:hover {
+    color: rgb(37, 129, 220);
+    background-color: white;
+    font-size: 1rem;
+}
+
+
+
+/* donate-now {
+    list-style-type: none;
+    margin: 25px 0 0 0;
+    padding: 0;
+  } */
+
+.btns li {
+    float: left;
+    margin: 0 30px 0 40px;
+    width: 170px;
+    height: 40px;
+    position: relative;
+    list-style-type: none;
+    background-color: rgb(156, 200, 238);
+    color: white;
+    font-weight: bold;
+}
+
+.btns label,
+.btns input {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.btns input[type="radio"] {
+    opacity: 0.01;
+    z-index: 100;
+}
+
+.btns input[type="radio"]:checked+label,
+.Checked+label {
+    background: white;
+    color: rgb(156, 200, 238);
+}
+
+.btns label {
+    padding: 5px;
+    border: 1px solid #CCC;
+    cursor: pointer;
+    z-index: 90;
+}
+
+/* Entry page end */
+
+
+
+/* Quiz page start */
+
+
+section {
+    width: 500px;
+    height: 500px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px 0px;
+    background-color: white;
+}
+
+section h4 {
+    padding: 10px;
+}
+
+.timing {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: 2px solid rgb(29, 94, 150);
+    border-radius: 50px;
+    margin-left: 10px;
+    padding: 10px;
+    color: rgb(29, 94, 150);
+    font-weight: bold;
+}
+
+.score {
+    float: right;
+    margin-top: -30px;
+}
+
+.questionnumber {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    color: rgb(29, 94, 150);
+    border: 2px solid rgb(29, 94, 150);
+    border-radius: 50px;
+    margin-left: 220px;
+    padding: 5px;
+    font-weight: bold;
+
+}
+
+.questions {
+    width: 460px;
+    height: 100px;
+    background-color: white;
+    margin-left: 22px;
+    justify-content: center;
+    margin-top: -10px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid grey;
+}
+
+.btn {
+    width: 200px;
+    height: 40px;
+    background-color: rgb(156, 200, 238);
+    margin-left: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.answer {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin-top: 20px;
+}
+
+.nxtque {
+    width: 150px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-top: 20px;
+    background-color: rgb(37, 129, 220);
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+}
+
+.nxtque:hover {
+    color: rgb(37, 129, 220);
+    background-color: white;
+    font-size: 1rem;
+}
+
+
+
+/* Quiz page end */
+
+
+/* Result page start  */
+
+#result-container p{
+    padding: 15px;
+    
+}
+
+/* Result page end  */

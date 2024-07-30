@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    
+    <main>
+    
+      <!-- Entry page start -->
+    
+      <section id="start-container">
+        <img src="Quiz1.webp" alt="">
+        <h1>Hello User!</h1>
+        <p>Enter your name to continue the Quizz.</p>
+    
+        <form action="">
+          <input type="text" placeholder="Enter your name" id="fname" required>
+          <p>You'll have 10 seconds to answer each questions</p>
+          <h1>Select Category</h1>
+          <ul class="btns">
+            <li>
+              <input type="radio" name="options" value="HTML" />
+              <label for="" id="opt">HTML</label>
+            </li>
+            <li>
+              <input type="radio" name="options" value="CSS" />
+              <label for="" id="opt">CSS</label>
+            </li><br><br><br>
+            <li>
+              <input type="radio" name="options" value="JAVASCRIPT" />
+              <label for="" id="opt">JAVASCRIPT</label>
+            </li>
+            <li>
+              <input type="radio" name="options" value="REACTJS" />
+              <label for="" id="opt">REACTJS</label>
+            </li>
+          </ul>
+          <input type="button" value="Enter" onclick="StartQuiz();">
+        </form>
+    
+      </section>
+    
+      <!-- Entry page end -->
+    
+      <!-- Quiz page start -->
+    
+      <section id="quiz-container" style="display: none;">
+    
+        <h4 id="category">option 1</h4>
+        <div class="timing"></div>
+        <div class="score">Score:0</div>
+        <div class="questionnumber" id="currque"></div>
+        <div class="questions" id="showquestion"></div>
+        <div class="answer">
+          <button class="btn" id="answerbtn" onclick="Selectoption(0)"></button>
+          <button class="btn" id="answerbtn" onclick="Selectoption(1)"></button>
+          <button class="btn" id="answerbtn" onclick="Selectoption(2)"></button>
+          <button class="btn" id="answerbtn" onclick="Selectoption(3)"></button>
+        </div>
+        <button class="nxtque" onclick="Nextquestion();">Next Question</button>
+    
+    
+    
+      </section>
+    
+      <!-- Quiz page end -->
+
+
+      <!-- Result page start -->
+
+
+      <section id="result-container"  style="display: none;">
+        <h1>Quiz Result</h1>
+        <p class="usrname"></p>
+        <p class="totaltime"></p>
+        <p class="totalquestion">Total question: 5 </p>
+        <p class="atmtquestion"></p>
+        
+        <p class="crrtquestion"></p>
+        
+        <p class="wrngquestion"></p>
+        <p class="percentage"></p>
+        
+        <button class="btn" onclick="StartQuiz();">Start Again</button>
+        <button class="btn" id="Home">Go to home</button>
+    </section>
+
+      <!-- Result page end -->
+    
+    </main>
+
+    <script src="questionpage.js"></script>
+</body>
+</html>
